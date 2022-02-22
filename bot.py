@@ -34,13 +34,13 @@ async def start(bot, message):
 async def start(bot, message):
     await message.reply(
         f"**Hello, {message.chat.first_name}!**\n\n"
-        "**If you send post which had Links, texts & images... Than I'll convert & replace all links with your links \nMessage me @kamdev07 For more help-**")
+        "**If you send post which had Links, texts & images... Than I'll convert & replace all links with your links \nMessage me @Half_Intelligent_2 For more help-**")
 
 @bot.on_message(filters.command('support') & filters.private)
 async def start(bot, message):
     await message.reply(
         f"**Hey, {message.chat.first_name}!**\n\n"
-        "**please contact me on @kamdev07 or for more join @pdisk_Admins**")
+        "**please contact me on @Half_Intelligent_2 or for more join @pdisk_Admins**")
     
 @bot.on_message(filters.text & filters.private)
 async def pdisk_uploader(bot, message):
@@ -73,7 +73,7 @@ async def pdisk_uploader(bot, message):
     
 async def pdisk_up(link):
     if ('mega' in link or 'google' in link or 'mdisk' in link or 'entertainvideo' in link or 'dood' in link or 'bit' in link ):
-        url = 'https://droplink.co/api'
+        url = 'https://tnlink.in/api'
         params = {'api': API_KEY, 'url': link}
     
         async with aiohttp.ClientSession() as session:
