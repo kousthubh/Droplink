@@ -127,15 +127,22 @@ async def remove_username(new_List):
     return new_List
   
 async def addFooter(str):
-    footer = """\n__▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬__
 
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-__🚀 𝗦𝗛𝗔𝗥𝗘 𝗔𝗡𝗗 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗨𝗦__
+    footer = '''<b>
 
-🔅How to Download -""" + HOWTO + """\n
-📣 Provide By @"""+ CHANNEL + """
-__🔊Join our Backup Channel For More updates ➢ @serials_funda
-_"""
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+Uploaded by 📤 @colors_kannada1_bot
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+🚀 𝗦𝗛𝗔𝗥𝗘 𝗔𝗡𝗗 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗨𝗦.
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+🙏Join our Backup Channel ➢ @serials_funda</b>
+
+'''
+
     return str + footer
-        
 bot.run()
