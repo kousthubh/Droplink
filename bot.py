@@ -28,7 +28,7 @@ bot = Client('Droplink bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "I'm Tnlink bot. Just send me link and get short link")
+        "**I'm Tnlink bot. Just send me link and get short link\n My Father @Half_Intelligent_2**")
 
 @bot.on_message(filters.command('help') & filters.private)
 async def start(bot, message):
