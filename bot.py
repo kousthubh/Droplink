@@ -28,24 +28,24 @@ bot = Client('Droplink bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi {message.chat.first_name}!**\n\n"
-        "I'm Droplink bot. Just send me link and get short link")
+        "I'm Tnlink bot. Just send me link and get short link")
 
 @bot.on_message(filters.command('help') & filters.private)
 async def start(bot, message):
     await message.reply(
         f"**Hello, {message.chat.first_name}!**\n\n"
-        "**If you send post which had Links, texts & images... Than I'll convert & replace all links with your links \nMessage me @Half_Intelligent_2 For more help-**")
+        "**If you send post which had Links, texts & images... Than I'll convert & replace all links with your links \nMessage me @Half_Intelligent_2 For more help🧑‍💻-**")
 
 @bot.on_message(filters.command('support') & filters.private)
 async def start(bot, message):
     await message.reply(
         f"**Hey, {message.chat.first_name}!**\n\n"
-        "**please contact me on @Half_Intelligent_2 or for more join @pdisk_Admins**")
+        "**If you need This Botplease contact me on @Half_Intelligent_2**")
     
 @bot.on_message(filters.text & filters.private)
 async def pdisk_uploader(bot, message):
     new_string = str(message.text)
-    conv = await message.reply("Converting...")
+    conv = await message.reply("Converting Your Link...")
     dele = conv["message_id"]
     try:
         pdisk_link = await multi_pdisk_up(new_string)
