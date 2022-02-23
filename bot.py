@@ -79,7 +79,7 @@ async def pdisk_up(link):
         async with aiohttp.ClientSession() as session:
             async with session.get(url, params=params, raise_for_status=True) as response:
                 data = await response.json()
-                v_url = """Link 👇🏻 \n🔗""" + data["shortenedUrl"] + """\n"""
+                v_url = """🔘__Episode__ - \nEn👉 """ + data["shortenedUrl"] + """\n"""
     else:
         v_url = link
         
@@ -127,22 +127,15 @@ async def remove_username(new_List):
     return new_List
   
 async def addFooter(str):
-    footer = """\n__
+    footer = """\n__▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬__
 
-
-
-
-
-
-
-_
-
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-__🚀 𝗦𝗛𝗔𝗥𝗘 𝗔𝗡𝗗 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗨𝗦_
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+__🚀 𝗦𝗛𝗔𝗥𝗘 𝗔𝗡𝗗 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗨𝗦__
 
 🔅How to Download -""" + HOWTO + """\n
 📣 Provide By @"""+ CHANNEL + """
-__Join Our Backup Channel ➢ @Serials_funda_"""
+__🔊Join our Backup Channel For More updates ➢ @serials_funda
+_"""
     return str + footer
         
 bot.run()
