@@ -79,7 +79,7 @@ async def pdisk_up(link):
         async with aiohttp.ClientSession() as session:
             async with session.get(url, params=params, raise_for_status=True) as response:
                 data = await response.json()
-                v_url = """__Link👇🏻__ - \n🔗 """ + data["shortenedUrl"] + """\n"""
+                v_url = """__2️⃣5️⃣🗡️0️⃣2️⃣🗡️2️⃣0️⃣2️⃣2️⃣__ - \n__▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬__ - \n\n🔗 """ + data["shortenedUrl"] + """\n"""
     else:
         v_url = link
         
