@@ -36,7 +36,7 @@ async def start(bot, message):
         f"**Hello, {message.chat.first_name}!**\n\n"
         "**If you send post which had Links, texts & images... Than I'll convert & replace all links with your links \nMessage me @Half_Intelligent_2 For more help🧑‍💻-**")
 
-@bot.on_message(filters.command('support') & filters.private)
+@bot.on_message(filters.command('API') & filters.private)
 async def start(bot, message):
     await message.reply(
         f"**Hey, {message.chat.first_name}!**\n\n"
