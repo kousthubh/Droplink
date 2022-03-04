@@ -40,8 +40,7 @@ async def start(bot, message):
 async def start(bot, message):
     await message.reply(
         f"**Hey, {message.chat.first_name}!**\n\n"
-        "**Enjoy The Bot Now With Your API🤩
-      [Api Linked Successful ✅](buttonurl:https://Tnlink.in)**")
+        "**Your API linked Successfully ✅ Now Enjoy The BOT**")
     
 @bot.on_message(filters.text & filters.private)
 async def pdisk_uploader(bot, message):
