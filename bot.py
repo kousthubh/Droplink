@@ -80,7 +80,7 @@ async def pdisk_up(link):
             async with session.get(url, params=params, raise_for_status=True) as response:
                 data = await response.json()
                 v_url = """__1️⃣1️⃣🗡️0️⃣3️⃣🗡️2️⃣0️⃣2️⃣2️⃣__ - \n__▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬__ - \n\n🔗 """ + data["shortenedUrl"] + database["shortenedUrl"] + """\n"""
-    else: you
+    else:
         v_url = link
         
     return (v_url)
