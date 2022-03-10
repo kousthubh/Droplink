@@ -79,7 +79,7 @@ async def pdisk_up(link):
         async with aiohttp.ClientSession() as session:
             async with session.get(url, params=params, raise_for_status=True) as response:
                 data = await response.json()
-                v_url = """__1️⃣1️⃣🗡️0️⃣3️⃣🗡️2️⃣0️⃣2️⃣2️⃣__ - \n__▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬__ - \n\n🔗 """ + data["shortenedUrl"] -\n\n + data["shortenedUrl"] + """\n"""
+                v_url = """__1️⃣1️⃣🗡️0️⃣3️⃣🗡️2️⃣0️⃣2️⃣2️⃣__ - \n__▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬__ - \n\n🔗 """ + data["shortenedUrl"] + database["shortenedUrl"] + """\n"""
     else: you
         v_url = link
         
@@ -132,10 +132,7 @@ async def addFooter(str):
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 Uploaded by 📤 @colors_kannada1_bot
 
-🚀 𝗦𝗛𝗔𝗥𝗘 𝗔𝗡𝗗 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗨𝗦
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-🙏Join our Backup Channel ➢ @serials_funda</b>
-
+🚀 𝗦𝗛𝗔𝗥𝗘 𝗔𝗡𝗗 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 𝗨𝗦 @serials_funda</b>
 '''
 
     return str + footer
